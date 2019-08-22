@@ -1,0 +1,35 @@
+$background-color: #f1f1f185;
+$transition: max-height 500ms ease-in;
+$max-height: 400px;
+
+.content{
+  background-color: $background-color;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.content-enter {
+  max-height: 0px;
+}
+
+.content-enter.content-enter-active {
+  max-height: $max-height;
+  transition: $transition;
+}
+
+.content-leave {
+  max-height: $max-height
+}
+
+.content-leave.content-leave-active {
+  max-height: 0px;
+  transition: $transition;
+}
+
+.container .MuiListItemText-root {
+  text-align: center;
+}
+
+.loader {
+  text-align: center;
+}
